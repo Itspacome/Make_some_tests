@@ -10,7 +10,7 @@ class SessionControllerTest < ActionDispatch::IntegrationTest
 
     test "valid login information" do
     	post user_session_path, params: { user: { email: "user@example.com", password: "password"}}
-    	assert_response :success
+    	assert_redire :success
   	end
 
     test "invalid login information" do
