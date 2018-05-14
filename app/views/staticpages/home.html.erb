@@ -1,0 +1,24 @@
+<div class="jumbotron">
+	<div class="container">
+    	<h1>Welcome in our website</h1>
+    	<br/>
+    	<% if user_signed_in? %>
+	    	<div class="row"> 
+	    		<p> Come on to the club </p>
+	    	</div>
+	    	<div class="row"> 
+		    	<div class="col-lg-offset-6 col-lg-3">
+		    		<%= link_to 'Club', club_path, class: 'btn btn-primary btn-lg' %>
+		    	</div>
+			</div>
+    	<% else %>
+    		<p>Register or login to get access to the club page !</p>
+    		<div class="row">
+	    		<div class="col-lg-offset-6 col-lg-3">
+			    	<%= link_to 'Login', new_user_session_path, class: 'btn btn-primary btn-lg' %>
+	    			<%= link_to 'Signup', new_user_registration_path, class: 'btn btn-primary btn-lg' %>
+    			</div>
+    		</div>
+    	<% end %>
+  	</div>
+</div>
