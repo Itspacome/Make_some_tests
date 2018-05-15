@@ -1,23 +1,20 @@
-<h1 align="center">Tests with rails</h1>
-<h2 align="center">THP Day 31</h2>
+# THP_Day30 - Make Tests !
 
+Nous devions faire des tests et utiliser la gem minitest aujourd'hui mais cela s'est avéré plus compliqué que prévu... 
 
-New week, new day, new project. Today, we code a app using test functionality. The used gem is minitest, purposed directly by rails. 
+## Pour voir l'app heroku : 
 
-### Process : 
-After cloning the repository, you can run tests : 
+Je n'ai pas pu tout faire et je sais même si je comprends un peu mieux je peux dire au jour d'aujourd'hui que je n'aime pas les tests, avec minitest du moins. </br>
 
-- For model tests : ```rails test:models```
+J'ai réussit à aller jusqu'au 2.2 (en partie), merci de ton indugence cher correcteur/correctrice :) </br>
 
-- For view tests : ```rails test:controllers```
+Pour te résumer, normalement tu peux ; 
 
+* accéder à la page d'accueil, vérifier qu'elle affiche les bons liens, login, signup
+* accéder à la page du "private club" si tu es signin/login et pouvoir te logout si tu es signin </br>
 
-### Status : 
-
-- [X] Model tests
-- [ ] View tests
-  - [X] Il faut tester la page d'accueil, et faire en sorte qu'elle affiche les bons liens, en fonction si la personne est connectée ou non
-  - [X]    Ensuite tu vas tester la page d'inscription, qui doit évidemment retourner une erreur si la personne n'a pas rentré les bons champs   (email en double, paramètre manquant)
-  - [ ] Il faut tester la page de login, qui doit login la personne si elle rentre un bon ID, et lui renvoyer un message d'erreur si elle ne renvoie pas un bon paramètre
-  - [X] Il faut tester la navbar, qui doit afficher les bons liens
-  - [X] Il faut tester la page du club, qui ne doit être accessible qu'aux personnes login. La page doit renvoyer la liste des personnes inscrites au site, donc il faut tester cela.
+Pour les commandes, comme d'ab : 
+- ```bundle install``` </br>
+Et pour les tests trop bien ! </br>
+- ```rails test:models```
+- ```rails test:controllers```
